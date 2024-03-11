@@ -11,7 +11,7 @@ this is a project by clonlara school
 	turn by turn
 ##### scenario :
 	with subtle references (more or less) to the lore of clonlara
-	we play a customizable french soldier
+	we play a stat customizable character
 	we'll see about adding characters
 ##### production method :
 	look at the pygame limits in terms of resolutions
