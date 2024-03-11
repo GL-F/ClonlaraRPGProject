@@ -18,6 +18,6 @@ this is a project by clonlara school
 	in the dream 128² if not we go down
 	the screen follows the character but not against the borders of the dungeons/rooms
 ##### method of execution :
-	##### as a first step :
-rafael scenario
-Antoine & Naël lead developers
+as a first step :
+Sheikthe scenario
+GLF & Hypercube lead developers
