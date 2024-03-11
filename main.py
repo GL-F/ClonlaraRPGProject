@@ -1,3 +1,5 @@
+import game.characters as ch
+
 class Game():
     """
     The main class, which
