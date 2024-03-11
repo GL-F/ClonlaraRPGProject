@@ -1,7 +1,7 @@
 # ClonlaraRPGProject
 this is a project by clonlara school
 
-A RPG in python programming language
+##A RPG in python programming language
 
 
 Specifications:
