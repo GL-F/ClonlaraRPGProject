@@ -21,5 +21,3 @@ a method of execution
 	as a first step :
 rafael scenario
 Antoine & Naël lead developers
-
-Translated with www.DeepL.com/Translator (free version)
