@@ -28,20 +28,20 @@ class movement:
         self.pos = pos      #position = [x, y] in the level
         self.dir = dir      #direction up, down, right, left
      
-    def deplace(self):
+    def deplace(self, dir_:str):
         backup_pos = self.pos
         y = self.pos[0] #highness
         x = self.pos[1] #widthness
         if self.lock == True: 
             return backup_pos #returns the starting position if the character is locked, like in a fight or a dialog
         try :       
-            if self.dir == "up" and board.get_case(self.stage[x, y+1]).crossable == True:      #if the direction is "up" adds 1 y      unless the up case is not "crossable"
+            if dir_ == "up" and board.get_case(self.stage[x, y+1]).crossable == True:      #if the direction is "up" adds 1 y      unless the up case is not "crossable"
                 self.pos[1] += 1                                                                    #
-            if self.dir == "down" and board.get_case(self.stage[x, y-1]).crossable == True:    #if the direction is "down" removes 1 y unless the down case is not "crossable"
+            if dir_ == "down" and board.get_case(self.stage[x, y-1]).crossable == True:    #if the direction is "down" removes 1 y unless the down case is not "crossable"
                 self.pos[1] -= 1                                                                    #
-            if self.dir == "right" and board.get_case(self.stage[x+1, y]).crossable == True:   #if the direction is "right" add 1 x    unless the right case is not "crossable"
+            if dir_ == "right" and board.get_case(self.stage[x+1, y]).crossable == True:   #if the direction is "right" add 1 x    unless the right case is not "crossable"
                 self.pos[0] += 1                                                                    #
-            if self.dir == "left" and board.get_case(self.stage[x-1, y]).crossable == True:    #if the direction is "left" removes 1 x unless the left case is not "crossable"
+            if dir_ == "left" and board.get_case(self.stage[x-1, y]).crossable == True:    #if the direction is "left" removes 1 x unless the left case is not "crossable"
                 self.pos[0] -= 1
             return self.pos
         except IndexError :     #unless it's the end of the map (indexError OutOfBound)

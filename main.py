@@ -57,13 +57,13 @@ while is_running: #main game loop
         
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_LEFT :
-                new_pos = stage_var.deplace()   #events to move left
+                new_pos = stage_var.deplace("left")   #events to move left
             if event.key == pygame.K_RIGHT :
-                new_pos = stage_var.deplace()   #events to move right
+                new_pos = stage_var.deplace("right")   #events to move right
             if event.key == pygame.K_UP :
-                new_pos = stage_var.deplace()   #events to move up
+                new_pos = stage_var.deplace("up")   #events to move up
             if event.key == pygame.K_DOWN :
-                new_pos = stage_var.deplace()   #events to move down
+                new_pos = stage_var.deplace("down")   #events to move down
             pos = new_pos
             print(pos, stage_var.pos, display_coords(pos)) #juste for testing
         if event.type == pygame.QUIT: #if we click on the red X on top right of the window, the games stops
